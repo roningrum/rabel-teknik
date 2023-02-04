@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import "bootstrap";
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    background: #f8f8fd!important;
+    margin: 0;
+}
+
+h1,h2,h3, h4{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.5%;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.25rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.25rem;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.25rem ;
+}
+
+p{
+    color: #1b1b24c7;
+}
+
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#FFFEFA! important ;
+    padding: 0px 64px;
+}
+.navbar-nav{
+    padding: 16px 12px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color:#1B1B24 ;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:active{
+    color:#d8ac0d ;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main{
+    padding-top: 72px;
+}
+
+/* Beranda */
+.header-section{
+    text-align: center;
+    padding-top: 72px;
+}
+.headline{
+    color:#29285D ;
+}
+.headline-1{
+    color: #FDCD17;
+}
+
+.header-section img{
+    max-width: 100%;
+    display: block;
+    width: 100%;
+    object-fit: fill;
+    min-height: 300px;
+}
+
+/* Klien */
+.client-section{
+    padding-top: 72px;
+    text-align: center;
+}
+
+.client-section h4{
+    color: #29285d80 ;
+}
+
+.client-section h2{
+    color: #29285D ;
+}
+
+.client-section img{
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    animation: scroll 60s linear infinite;
+}
+.client-section .slide-track{
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+}
+
+.client-section .slider{
+    padding: 4em 2em;
+}
+
+/* about */
+.about-section{
+    background: #FFFEFA;
+    margin-top: 105px;
+    padding-bottom: 72px;
+}
+
+.about-section h4{
+    padding-top: 72px;
+    color: #29285d80;
+}
+
+.about-section h3{
+    color: #29285D;
+}
+
+.about-section h2{
+    color: #29285D;
+}
+
+.about-section p{
+    text-align: start;
+    color:#1b1b24e1;
+}
+
+.about-section .about{
+    max-width: 100%;
+    display: block;
+    padding-top: 72px;
+}
+
+.about-section .icon img{
+    max-width: 100%;
+    display: block;
+}
+
+/* catalog */
+.product-section {
+    background: #FDCD17;
+    padding: 72px;
+}
+
+.product-section h2 {
+    color: #29285D;
+}
+
+.product-section .category{
+    display: flex;
+    align-items: center;
+}
+
+.product-section .category h4{
+   color: #29285D;
+}
+
+.product-section img{
+    max-width: 100%;
+ }
+
+ /* delivery */
+.delivery-section{
+    background: #F8F8FF;
+    padding: 72px;
+}
+
+.delivery-section h2{
+    color: #29285D;
+}
+
+.delivery-section img{
+    width: 100%;
+}
+
+/* contact */
+.contact-section{
+    background: #29285D;
+    color: #F8F8FF;
+    align-items: center;
+    padding-inline: 64px;
+    padding-top: 64px;
+}
+
+.btn.btn-warning{
+   padding: 12px 16px;
+}
+.btn.btn-outline-warning{
+   padding: 12px 16px;
+}
+
+.btn.btn-warning{
+    border-color: #FDCD17;
+    background: #FDCD17;
+}
+
+.btn.btn-warning:hover{
+    border-color: #FDCD17;
+    background: #F8F8FF;
+    color: #29285D;
+}
+
+.btn.btn-outline-warning{
+    border-color: #FDCD17;
+    background: #F8F8FF;
+}
+
+.btn.btn-outline-warning:hover{
+    border-color: #FDCD17;
+    background: #FDCD17;
+    color: #29285D;
+}
+
+.contact-section a{
+    font-size:1.25rem; 
+    font-weight: 600; 
+    color: #29285D;
+}
+
+/* footer */
+.footer{
+    padding: 7rem 0;
+    background: #f8f8fd;
+    color: #29285D;
+}
+
+.footer .footer-site-logo img{
+    margin-bottom: 8px;
+}
+
+.footer .footer-site-logo img{
+    width: 230px;
+}
+
+.footer p{
+    color: #1b1b24;
+    margin-top: 8px;
+}
+
+.footer a{
+    font-size: 1rem;
+    color: #29285D;
+    font-weight: 600;
+    align-items: center;
+    text-decoration: none;
+}
+
+.contact ul li .contact ul li > a{
+    display: table;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+.contact ul li icon{
+    padding-top: 2px;
+    padding-right: 2rem;
+    width: 24px;
+    font-size: 18px;
+}
+
+.contact ul li .text{
+    padding-left: 0.5rem;
+}
+
+
+.contact ul li .icon, .contact ul li .text{
+    display: table-cell;
+    vertical-align: top;
+    
+}
+
+.profil-menu ul li{
+    width: fit-content;
+}
+
+.profil-menu ul li a{
+    color: #1B1B24;
+    padding-bottom:10px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.profil-menu ul li a:hover,
+.profil-menu ul li a:active,
+.profil-menu ul li a:focus{
+    color: #d8ac0d;
+}
+
+.footer p{
+    font-size: 1rem;
+}
+.brand h4{
+    color: #1B1B24;
+}
+
+.brand ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    margin-top: 10px;
+}
+.brand-name, .product{
+    display: flex;   
+}
+
+.brand-name{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brand-name .product{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.footer .copyright{
+    color: #29285d8a;
+}
+
+@keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+}
+
+@media only screen and (max-width: 576px) {
+    .btn.btn-warning{
+        margin-bottom: 0.5em;
+     }
+     .btn.btn-outline-warning{
+        margin-bottom: 0.5em;
+     }
+     .brand-name{
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .navbar{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 8px 8px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    h1{
+        font-size: 2.25rem;
+    }
+    h2{
+        font-size: 1.75rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .client-section .slider{
+        padding: 1em 1em;
+    }
+    .img{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width: 720px) {
+    .container-fluid.menu {
+        display: flex;
+         justify-content: center;
+    }
+    .navbar{
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0 64px;
+    }
+    
+}
